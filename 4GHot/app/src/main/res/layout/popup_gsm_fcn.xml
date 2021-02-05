@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bound_gray_5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingTop="20dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="频点"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_gsm_fcn1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_edit_text_bkg"
+            android:digits="@string/number_rule"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:hint="移动"/>
+
+        <EditText
+            android:id="@+id/et_gsm_fcn2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_edit_text_bkg"
+            android:digits="@string/number_rule"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:hint="联通"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel_gsm"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_button_bkg"
+            android:text="取消"
+            android:textColor="@color/darkorange" />
+
+        <Button
+            android:id="@+id/btn_save_gsm"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/common_button_bkg"
+            android:text="保存"
+            android:textColor="@color/darkorange" />
+    </LinearLayout>
+
+
+</LinearLayout>
