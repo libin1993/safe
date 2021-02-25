@@ -510,11 +510,11 @@ public class DeviceParamActivity extends BaseActivity implements EventAdapter.Ev
                     EventAdapter.call(EventAdapter.ADD_BLACKBOX, BlackBoxManger.SET_ALL_POWER + "低");
                     break;
                 case R.id.rbPowerLow1:
-                    setPowerLevel(-45);
+                    setPowerLevel(-31);
                     EventAdapter.call(EventAdapter.ADD_BLACKBOX, BlackBoxManger.SET_ALL_POWER + "低");
                     break;
                 case R.id.rbPowerLow2:
-                    setPowerLevel(-60);
+                    setPowerLevel(-32);
                     EventAdapter.call(EventAdapter.ADD_BLACKBOX, BlackBoxManger.SET_ALL_POWER + "低");
                     break;
             }
@@ -710,9 +710,9 @@ public class DeviceParamActivity extends BaseActivity implements EventAdapter.Ev
                 index = 0;
             }else if (powerLevel < 30){
                 index = 1;
-            }else if (powerLevel <45){
+            }else if (powerLevel <31){
                 index = 2;
-            }else if (powerLevel < 60){
+            }else if (powerLevel < 32){
                 index = 3;
             }else {
                 index = 4;

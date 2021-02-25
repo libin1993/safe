@@ -34,6 +34,7 @@
         <EditText
             android:id="@+id/etAccount"
             style="@style/dialog_edit"
+            android:maxLength="20"
             android:singleLine="true"
             android:textCursorDrawable="@null"
             android:digits="@string/account_rule" />
@@ -55,6 +56,7 @@
             style="@style/dialog_edit"
             android:singleLine="true"
             android:textCursorDrawable="@null"
+            android:maxLength="20"
             android:digits="@string/account_rule"
       />
     </LinearLayout>
